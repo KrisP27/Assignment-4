@@ -221,3 +221,7 @@ app.get("/me", requireAuth, async (req, res) => {
 app.listen(process.env.PORT,  () => {
   console.log("App running on port: ", process.env.PORT);
 });
+
+app.get("/", (req, res) => {
+    res.send("Hello from Node API!");
+});
